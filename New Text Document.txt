@@ -1,0 +1,1273 @@
+Enter the number of messages to simulate: 50
+Enter  packet loss probability [enter 0.0 for no loss]:.3
+Enter packet corruption probability [0.0 for no corruption]:0
+Enter average time between messages from sender's layer5 [ > 0.0]:10
+Enter TRACE:0
+  A_output: bufferred packet (seq=1): aaaaaaaaaaaaaaaaaaa
+  send_window: send packet (seq=1): aaaaaaaaaaaaaaaaaaa
+  B_input: recv packet (seq=1): aaaaaaaaaaaaaaaaaaa
+  B_input: send ACK (ack=1)
+  A_input: got ACK (ack=1)
+  A_input: stop timer
+  A_output: bufferred packet (seq=2): bbbbbbbbbbbbbbbbbbb
+  send_window: send packet (seq=2): bbbbbbbbbbbbbbbbbbb
+  B_input: recv packet (seq=2): bbbbbbbbbbbbbbbbbbb
+  B_input: send ACK (ack=2)
+  A_input: got ACK (ack=2)
+  A_input: stop timer
+  A_output: bufferred packet (seq=3): ccccccccccccccccccc
+  send_window: send packet (seq=3): ccccccccccccccccccc
+  B_input: recv packet (seq=3): ccccccccccccccccccc
+  B_input: send ACK (ack=3)
+  A_input: got ACK (ack=3)
+  A_input: stop timer
+  A_output: bufferred packet (seq=4): ddddddddddddddddddd
+  send_window: send packet (seq=4): ddddddddddddddddddd
+  B_input: recv packet (seq=4): ddddddddddddddddddd
+  B_input: send ACK (ack=4)
+  A_input: got ACK (ack=4)
+  A_input: stop timer
+  A_output: bufferred packet (seq=5): eeeeeeeeeeeeeeeeeee
+  send_window: send packet (seq=5): eeeeeeeeeeeeeeeeeee
+  B_input: recv packet (seq=5): eeeeeeeeeeeeeeeeeee
+  B_input: send ACK (ack=5)
+  A_output: bufferred packet (seq=6): fffffffffffffffffff
+  send_window: send packet (seq=6): fffffffffffffffffff
+  A_timerinterrupt: resend packet (seq=5): eeeeeeeeeeeeeeeeeee
+  A_timerinterrupt: resend packet (seq=6): fffffffffffffffffff
+  A_timerinterrupt: timer + 15.000000
+  B_input: recv packet (seq=6): fffffffffffffffffff
+  B_input: send ACK (ack=6)
+  B_input: not the expected seq. send NAK (ack=6)
+  A_output: bufferred packet (seq=7): ggggggggggggggggggg
+  send_window: send packet (seq=7): ggggggggggggggggggg
+  A_input: got ACK (ack=6)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  B_input: recv packet (seq=7): ggggggggggggggggggg
+  B_input: send ACK (ack=7)
+  A_input: got NAK (ack=6). drop.
+  A_timerinterrupt: resend packet (seq=7): ggggggggggggggggggg
+  A_timerinterrupt: timer + 15.000000
+  A_output: bufferred packet (seq=8): hhhhhhhhhhhhhhhhhhh
+  send_window: send packet (seq=8): hhhhhhhhhhhhhhhhhhh
+  B_input: not the expected seq. send NAK (ack=7)
+  A_input: got ACK (ack=7)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  B_input: recv packet (seq=8): hhhhhhhhhhhhhhhhhhh
+  B_input: send ACK (ack=8)
+  A_timerinterrupt: resend packet (seq=8): hhhhhhhhhhhhhhhhhhh
+  A_timerinterrupt: timer + 15.000000
+  A_output: bufferred packet (seq=9): iiiiiiiiiiiiiiiiiii
+  send_window: send packet (seq=9): iiiiiiiiiiiiiiiiiii
+  A_input: got ACK (ack=8)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=8)
+  A_input: got NAK (ack=8). drop.
+  A_timerinterrupt: resend packet (seq=9): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: timer + 15.000000
+  B_input: recv packet (seq=9): iiiiiiiiiiiiiiiiiii
+  B_input: send ACK (ack=9)
+  A_output: bufferred packet (seq=10): jjjjjjjjjjjjjjjjjjj
+  send_window: send packet (seq=10): jjjjjjjjjjjjjjjjjjj
+  B_input: not the expected seq. send NAK (ack=9)
+  B_input: recv packet (seq=10): jjjjjjjjjjjjjjjjjjj
+  B_input: send ACK (ack=10)
+  A_output: bufferred packet (seq=11): kkkkkkkkkkkkkkkkkkk
+  send_window: send packet (seq=11): kkkkkkkkkkkkkkkkkkk
+  B_input: recv packet (seq=11): kkkkkkkkkkkkkkkkkkk
+  B_input: send ACK (ack=11)
+  A_output: bufferred packet (seq=12): lllllllllllllllllll
+  send_window: send packet (seq=12): lllllllllllllllllll
+  A_input: got ACK (ack=9)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  A_output: bufferred packet (seq=13): mmmmmmmmmmmmmmmmmmm
+  send_window: send packet (seq=13): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=10): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=11): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=12): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=13): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: timer + 15.000000
+  B_input: recv packet (seq=12): lllllllllllllllllll
+  B_input: send ACK (ack=12)
+  B_input: not the expected seq. send NAK (ack=12)
+  A_input: got ACK (ack=12)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=12)
+  A_output: bufferred packet (seq=14): nnnnnnnnnnnnnnnnnnn
+  send_window: send packet (seq=14): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: resend packet (seq=13): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=14): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: timer + 15.000000
+  B_input: recv packet (seq=13): mmmmmmmmmmmmmmmmmmm
+  B_input: send ACK (ack=13)
+  A_input: got NAK (ack=12). drop.
+  B_input: recv packet (seq=14): nnnnnnnnnnnnnnnnnnn
+  B_input: send ACK (ack=14)
+  B_input: not the expected seq. send NAK (ack=14)
+  A_output: bufferred packet (seq=15): ooooooooooooooooooo
+  send_window: send packet (seq=15): ooooooooooooooooooo
+  A_output: bufferred packet (seq=16): ppppppppppppppppppp
+  send_window: send packet (seq=16): ppppppppppppppppppp
+  A_input: got ACK (ack=14)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  A_timerinterrupt: resend packet (seq=15): ooooooooooooooooooo
+  A_timerinterrupt: resend packet (seq=16): ppppppppppppppppppp
+  A_timerinterrupt: timer + 15.000000
+  B_input: recv packet (seq=15): ooooooooooooooooooo
+  B_input: send ACK (ack=15)
+  A_input: got ACK (ack=15)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  B_input: recv packet (seq=16): ppppppppppppppppppp
+  B_input: send ACK (ack=16)
+  A_input: got ACK (ack=16)
+  A_input: stop timer
+  B_input: not the expected seq. send NAK (ack=16)
+  A_output: bufferred packet (seq=17): qqqqqqqqqqqqqqqqqqq
+  send_window: send packet (seq=17): qqqqqqqqqqqqqqqqqqq
+  A_input: got NAK (ack=16). drop.
+  B_input: recv packet (seq=17): qqqqqqqqqqqqqqqqqqq
+  B_input: send ACK (ack=17)
+  A_timerinterrupt: resend packet (seq=17): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: timer + 15.000000
+  A_output: bufferred packet (seq=18): rrrrrrrrrrrrrrrrrrr
+  send_window: send packet (seq=18): rrrrrrrrrrrrrrrrrrr
+  A_output: bufferred packet (seq=19): sssssssssssssssssss
+  send_window: send packet (seq=19): sssssssssssssssssss
+  B_input: not the expected seq. send NAK (ack=17)
+  A_output: bufferred packet (seq=20): ttttttttttttttttttt
+  send_window: send packet (seq=20): ttttttttttttttttttt
+  B_input: recv packet (seq=18): rrrrrrrrrrrrrrrrrrr
+  B_input: send ACK (ack=18)
+  A_timerinterrupt: resend packet (seq=17): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=18): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=19): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=20): ttttttttttttttttttt
+  A_timerinterrupt: timer + 15.000000
+  A_output: bufferred packet (seq=21): uuuuuuuuuuuuuuuuuuu
+  send_window: send packet (seq=21): uuuuuuuuuuuuuuuuuuu
+  B_input: recv packet (seq=19): sssssssssssssssssss
+  B_input: send ACK (ack=19)
+  A_input: got ACK (ack=17)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=19)
+  A_input: got ACK (ack=18)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  A_output: bufferred packet (seq=22): vvvvvvvvvvvvvvvvvvv
+  send_window: send packet (seq=22): vvvvvvvvvvvvvvvvvvv
+  B_input: not the expected seq. send NAK (ack=19)
+  A_timerinterrupt: resend packet (seq=19): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=20): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=21): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=22): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=19)
+  A_input: got ACK (ack=19)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  B_input: recv packet (seq=20): ttttttttttttttttttt
+  B_input: send ACK (ack=20)
+  A_output: bufferred packet (seq=23): wwwwwwwwwwwwwwwwwww
+  send_window: send packet (seq=23): wwwwwwwwwwwwwwwwwww
+  B_input: recv packet (seq=21): uuuuuuuuuuuuuuuuuuu
+  B_input: send ACK (ack=21)
+  A_input: got ACK (ack=20)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  A_output: bufferred packet (seq=24): xxxxxxxxxxxxxxxxxxx
+  send_window: send packet (seq=24): xxxxxxxxxxxxxxxxxxx
+  B_input: recv packet (seq=22): vvvvvvvvvvvvvvvvvvv
+  B_input: send ACK (ack=22)
+  A_output: bufferred packet (seq=25): yyyyyyyyyyyyyyyyyyy
+  send_window: send packet (seq=25): yyyyyyyyyyyyyyyyyyy
+  A_timerinterrupt: resend packet (seq=21): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=22): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=23): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: resend packet (seq=24): xxxxxxxxxxxxxxxxxxx
+  A_timerinterrupt: resend packet (seq=25): yyyyyyyyyyyyyyyyyyy
+  A_timerinterrupt: timer + 15.000000
+  A_input: got ACK (ack=21)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  A_input: got ACK (ack=22)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=22)
+  A_input: got NAK (ack=22). drop.
+  A_output: bufferred packet (seq=26): zzzzzzzzzzzzzzzzzzz
+  send_window: send packet (seq=26): zzzzzzzzzzzzzzzzzzz
+  A_timerinterrupt: resend packet (seq=23): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: resend packet (seq=24): xxxxxxxxxxxxxxxxxxx
+  A_timerinterrupt: resend packet (seq=25): yyyyyyyyyyyyyyyyyyy
+  A_timerinterrupt: resend packet (seq=26): zzzzzzzzzzzzzzzzzzz
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=22)
+  B_input: not the expected seq. send NAK (ack=22)
+  A_output: bufferred packet (seq=27): aaaaaaaaaaaaaaaaaaa
+  send_window: send packet (seq=27): aaaaaaaaaaaaaaaaaaa
+  A_input: got NAK (ack=22). drop.
+  B_input: not the expected seq. send NAK (ack=22)
+  B_input: recv packet (seq=23): wwwwwwwwwwwwwwwwwww
+  B_input: send ACK (ack=23)
+  B_input: not the expected seq. send NAK (ack=23)
+  A_timerinterrupt: resend packet (seq=23): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: resend packet (seq=24): xxxxxxxxxxxxxxxxxxx
+  A_timerinterrupt: resend packet (seq=25): yyyyyyyyyyyyyyyyyyy
+  A_timerinterrupt: resend packet (seq=26): zzzzzzzzzzzzzzzzzzz
+  A_timerinterrupt: resend packet (seq=27): aaaaaaaaaaaaaaaaaaa
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=23)
+  A_input: got ACK (ack=23)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  A_output: bufferred packet (seq=28): bbbbbbbbbbbbbbbbbbb
+  send_window: send packet (seq=28): bbbbbbbbbbbbbbbbbbb
+  B_input: not the expected seq. send NAK (ack=23)
+  B_input: not the expected seq. send NAK (ack=23)
+  A_output: bufferred packet (seq=29): ccccccccccccccccccc
+  send_window: send packet (seq=29): ccccccccccccccccccc
+  A_input: got NAK (ack=23). drop.
+  A_timerinterrupt: resend packet (seq=24): xxxxxxxxxxxxxxxxxxx
+  A_timerinterrupt: resend packet (seq=25): yyyyyyyyyyyyyyyyyyy
+  A_timerinterrupt: resend packet (seq=26): zzzzzzzzzzzzzzzzzzz
+  A_timerinterrupt: resend packet (seq=27): aaaaaaaaaaaaaaaaaaa
+  A_timerinterrupt: resend packet (seq=28): bbbbbbbbbbbbbbbbbbb
+  A_timerinterrupt: resend packet (seq=29): ccccccccccccccccccc
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=23)
+  B_input: recv packet (seq=24): xxxxxxxxxxxxxxxxxxx
+  B_input: send ACK (ack=24)
+  A_input: got NAK (ack=23). drop.
+  B_input: not the expected seq. send NAK (ack=24)
+  A_output: bufferred packet (seq=30): ddddddddddddddddddd
+  send_window: send packet (seq=30): ddddddddddddddddddd
+  A_timerinterrupt: resend packet (seq=24): xxxxxxxxxxxxxxxxxxx
+  A_timerinterrupt: resend packet (seq=25): yyyyyyyyyyyyyyyyyyy
+  A_timerinterrupt: resend packet (seq=26): zzzzzzzzzzzzzzzzzzz
+  A_timerinterrupt: resend packet (seq=27): aaaaaaaaaaaaaaaaaaa
+  A_timerinterrupt: resend packet (seq=28): bbbbbbbbbbbbbbbbbbb
+  A_timerinterrupt: resend packet (seq=29): ccccccccccccccccccc
+  A_timerinterrupt: resend packet (seq=30): ddddddddddddddddddd
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=24)
+  A_input: got ACK (ack=24)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=24)
+  A_input: got NAK (ack=24). drop.
+  A_input: got NAK (ack=24). drop.
+  B_input: recv packet (seq=25): yyyyyyyyyyyyyyyyyyy
+  B_input: send ACK (ack=25)
+  A_output: bufferred packet (seq=31): eeeeeeeeeeeeeeeeeee
+  send_window: send packet (seq=31): eeeeeeeeeeeeeeeeeee
+  A_input: got NAK (ack=24). drop.
+  A_timerinterrupt: resend packet (seq=25): yyyyyyyyyyyyyyyyyyy
+  A_timerinterrupt: resend packet (seq=26): zzzzzzzzzzzzzzzzzzz
+  A_timerinterrupt: resend packet (seq=27): aaaaaaaaaaaaaaaaaaa
+  A_timerinterrupt: resend packet (seq=28): bbbbbbbbbbbbbbbbbbb
+  A_timerinterrupt: resend packet (seq=29): ccccccccccccccccccc
+  A_timerinterrupt: resend packet (seq=30): ddddddddddddddddddd
+  A_timerinterrupt: resend packet (seq=31): eeeeeeeeeeeeeeeeeee
+  A_timerinterrupt: timer + 15.000000
+  B_input: recv packet (seq=26): zzzzzzzzzzzzzzzzzzz
+  B_input: send ACK (ack=26)
+  A_input: got ACK (ack=25)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=26)
+  A_output: bufferred packet (seq=32): fffffffffffffffffff
+  send_window: send packet (seq=32): fffffffffffffffffff
+  A_timerinterrupt: resend packet (seq=26): zzzzzzzzzzzzzzzzzzz
+  A_timerinterrupt: resend packet (seq=27): aaaaaaaaaaaaaaaaaaa
+  A_timerinterrupt: resend packet (seq=28): bbbbbbbbbbbbbbbbbbb
+  A_timerinterrupt: resend packet (seq=29): ccccccccccccccccccc
+  A_timerinterrupt: resend packet (seq=30): ddddddddddddddddddd
+  A_timerinterrupt: resend packet (seq=31): eeeeeeeeeeeeeeeeeee
+  A_timerinterrupt: resend packet (seq=32): fffffffffffffffffff
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=26)
+  A_input: got ACK (ack=26)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  A_input: got NAK (ack=26). drop.
+  B_input: not the expected seq. send NAK (ack=26)
+  B_input: not the expected seq. send NAK (ack=26)
+  A_timerinterrupt: resend packet (seq=27): aaaaaaaaaaaaaaaaaaa
+  A_timerinterrupt: resend packet (seq=28): bbbbbbbbbbbbbbbbbbb
+  A_timerinterrupt: resend packet (seq=29): ccccccccccccccccccc
+  A_timerinterrupt: resend packet (seq=30): ddddddddddddddddddd
+  A_timerinterrupt: resend packet (seq=31): eeeeeeeeeeeeeeeeeee
+  A_timerinterrupt: resend packet (seq=32): fffffffffffffffffff
+  A_timerinterrupt: timer + 15.000000
+  A_output: bufferred packet (seq=33): ggggggggggggggggggg
+  send_window: send packet (seq=33): ggggggggggggggggggg
+  B_input: not the expected seq. send NAK (ack=26)
+  A_input: got NAK (ack=26). drop.
+  B_input: recv packet (seq=27): aaaaaaaaaaaaaaaaaaa
+  B_input: send ACK (ack=27)
+  A_input: got NAK (ack=26). drop.
+  B_input: not the expected seq. send NAK (ack=27)
+  A_output: bufferred packet (seq=34): hhhhhhhhhhhhhhhhhhh
+  send_window: send packet (seq=34): hhhhhhhhhhhhhhhhhhh
+  A_timerinterrupt: resend packet (seq=27): aaaaaaaaaaaaaaaaaaa
+  A_timerinterrupt: resend packet (seq=28): bbbbbbbbbbbbbbbbbbb
+  A_timerinterrupt: resend packet (seq=29): ccccccccccccccccccc
+  A_timerinterrupt: resend packet (seq=30): ddddddddddddddddddd
+  A_timerinterrupt: resend packet (seq=31): eeeeeeeeeeeeeeeeeee
+  A_timerinterrupt: resend packet (seq=32): fffffffffffffffffff
+  A_timerinterrupt: resend packet (seq=33): ggggggggggggggggggg
+  A_timerinterrupt: resend packet (seq=34): hhhhhhhhhhhhhhhhhhh
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=27)
+  B_input: not the expected seq. send NAK (ack=27)
+  A_output: bufferred packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_output: bufferred packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  B_input: not the expected seq. send NAK (ack=27)
+  A_output: bufferred packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_input: got ACK (ack=27)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  A_timerinterrupt: resend packet (seq=28): bbbbbbbbbbbbbbbbbbb
+  A_timerinterrupt: resend packet (seq=29): ccccccccccccccccccc
+  A_timerinterrupt: resend packet (seq=30): ddddddddddddddddddd
+  A_timerinterrupt: resend packet (seq=31): eeeeeeeeeeeeeeeeeee
+  A_timerinterrupt: resend packet (seq=32): fffffffffffffffffff
+  A_timerinterrupt: resend packet (seq=33): ggggggggggggggggggg
+  A_timerinterrupt: resend packet (seq=34): hhhhhhhhhhhhhhhhhhh
+  A_timerinterrupt: timer + 15.000000
+  B_input: recv packet (seq=28): bbbbbbbbbbbbbbbbbbb
+  B_input: send ACK (ack=28)
+  A_output: bufferred packet (seq=38): lllllllllllllllllll
+  send_window: send packet (seq=35): iiiiiiiiiiiiiiiiiii
+  B_input: recv packet (seq=29): ccccccccccccccccccc
+  B_input: send ACK (ack=29)
+  A_input: got ACK (ack=28)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  A_output: bufferred packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  send_window: send packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  B_input: recv packet (seq=30): ddddddddddddddddddd
+  B_input: send ACK (ack=30)
+  A_input: got ACK (ack=29)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  A_timerinterrupt: resend packet (seq=30): ddddddddddddddddddd
+  A_timerinterrupt: resend packet (seq=31): eeeeeeeeeeeeeeeeeee
+  A_timerinterrupt: resend packet (seq=32): fffffffffffffffffff
+  A_timerinterrupt: resend packet (seq=33): ggggggggggggggggggg
+  A_timerinterrupt: resend packet (seq=34): hhhhhhhhhhhhhhhhhhh
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: timer + 15.000000
+  A_input: got ACK (ack=30)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  B_input: recv packet (seq=31): eeeeeeeeeeeeeeeeeee
+  B_input: send ACK (ack=31)
+  A_input: got ACK (ack=31)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  A_output: bufferred packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  send_window: send packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  send_window: send packet (seq=38): lllllllllllllllllll
+  send_window: send packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=32): fffffffffffffffffff
+  A_timerinterrupt: resend packet (seq=33): ggggggggggggggggggg
+  A_timerinterrupt: resend packet (seq=34): hhhhhhhhhhhhhhhhhhh
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=31)
+  B_input: not the expected seq. send NAK (ack=31)
+  A_input: got NAK (ack=31). drop.
+  A_input: got NAK (ack=31). drop.
+  B_input: not the expected seq. send NAK (ack=31)
+  A_output: bufferred packet (seq=41): ooooooooooooooooooo
+  B_input: not the expected seq. send NAK (ack=31)
+  B_input: recv packet (seq=32): fffffffffffffffffff
+  B_input: send ACK (ack=32)
+  A_timerinterrupt: resend packet (seq=32): fffffffffffffffffff
+  A_timerinterrupt: resend packet (seq=33): ggggggggggggggggggg
+  A_timerinterrupt: resend packet (seq=34): hhhhhhhhhhhhhhhhhhh
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=31). drop.
+  B_input: not the expected seq. send NAK (ack=32)
+  B_input: not the expected seq. send NAK (ack=32)
+  A_input: got ACK (ack=32)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  A_output: bufferred packet (seq=42): ppppppppppppppppppp
+  send_window: send packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_input: got NAK (ack=32). drop.
+  A_input: got NAK (ack=32). drop.
+  A_timerinterrupt: resend packet (seq=33): ggggggggggggggggggg
+  A_timerinterrupt: resend packet (seq=34): hhhhhhhhhhhhhhhhhhh
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=32)
+  A_output: bufferred packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_input: got NAK (ack=32). drop.
+  B_input: not the expected seq. send NAK (ack=32)
+  A_timerinterrupt: resend packet (seq=33): ggggggggggggggggggg
+  A_timerinterrupt: resend packet (seq=34): hhhhhhhhhhhhhhhhhhh
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=32)
+  A_input: got NAK (ack=32). drop.
+  A_output: bufferred packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_output: bufferred packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=33): ggggggggggggggggggg
+  A_timerinterrupt: resend packet (seq=34): hhhhhhhhhhhhhhhhhhh
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=32)
+  B_input: not the expected seq. send NAK (ack=32)
+  B_input: not the expected seq. send NAK (ack=32)
+  A_input: got NAK (ack=32). drop.
+  B_input: not the expected seq. send NAK (ack=32)
+  A_output: bufferred packet (seq=46): ttttttttttttttttttt
+  A_input: got NAK (ack=32). drop.
+  A_input: got NAK (ack=32). drop.
+  A_timerinterrupt: resend packet (seq=33): ggggggggggggggggggg
+  A_timerinterrupt: resend packet (seq=34): hhhhhhhhhhhhhhhhhhh
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=32)
+  B_input: not the expected seq. send NAK (ack=32)
+  A_input: got NAK (ack=32). drop.
+  B_input: not the expected seq. send NAK (ack=32)
+  A_output: bufferred packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=33): ggggggggggggggggggg
+  A_timerinterrupt: resend packet (seq=34): hhhhhhhhhhhhhhhhhhh
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=32). drop.
+  B_input: not the expected seq. send NAK (ack=32)
+  B_input: not the expected seq. send NAK (ack=32)
+  A_input: got NAK (ack=32). drop.
+  B_input: not the expected seq. send NAK (ack=32)
+  A_input: got NAK (ack=32). drop.
+  A_timerinterrupt: resend packet (seq=33): ggggggggggggggggggg
+  A_timerinterrupt: resend packet (seq=34): hhhhhhhhhhhhhhhhhhh
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: timer + 15.000000
+  B_input: recv packet (seq=33): ggggggggggggggggggg
+  B_input: send ACK (ack=33)
+  A_output: bufferred packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_input: got ACK (ack=33)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=33)
+  A_output: bufferred packet (seq=49): wwwwwwwwwwwwwwwwwww
+  send_window: send packet (seq=41): ooooooooooooooooooo
+  B_input: not the expected seq. send NAK (ack=33)
+  A_input: got NAK (ack=33). drop.
+  A_timerinterrupt: resend packet (seq=34): hhhhhhhhhhhhhhhhhhh
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=33). drop.
+  B_input: not the expected seq. send NAK (ack=33)
+  A_output: bufferred packet (seq=50): xxxxxxxxxxxxxxxxxxx
+  B_input: recv packet (seq=34): hhhhhhhhhhhhhhhhhhh
+  B_input: send ACK (ack=34)
+  A_timerinterrupt: resend packet (seq=34): hhhhhhhhhhhhhhhhhhh
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=34)
+  B_input: not the expected seq. send NAK (ack=34)
+  A_input: got ACK (ack=34)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=34)
+  B_input: not the expected seq. send NAK (ack=34)
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=34). drop.
+  B_input: not the expected seq. send NAK (ack=34)
+  A_input: got NAK (ack=34). drop.
+  B_input: not the expected seq. send NAK (ack=34)
+  A_input: got NAK (ack=34). drop.
+  B_input: not the expected seq. send NAK (ack=34)
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=34). drop.
+  B_input: not the expected seq. send NAK (ack=34)
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=34)
+  A_input: got NAK (ack=34). drop.
+  B_input: not the expected seq. send NAK (ack=34)
+  A_input: got NAK (ack=34). drop.
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=34)
+  B_input: not the expected seq. send NAK (ack=34)
+  B_input: not the expected seq. send NAK (ack=34)
+  A_input: got NAK (ack=34). drop.
+  B_input: not the expected seq. send NAK (ack=34)
+  A_input: got NAK (ack=34). drop.
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=34)
+  B_input: not the expected seq. send NAK (ack=34)
+  A_input: got NAK (ack=34). drop.
+  B_input: not the expected seq. send NAK (ack=34)
+  A_input: got NAK (ack=34). drop.
+  B_input: not the expected seq. send NAK (ack=34)
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=34). drop.
+  B_input: not the expected seq. send NAK (ack=34)
+  A_input: got NAK (ack=34). drop.
+  A_input: got NAK (ack=34). drop.
+  B_input: not the expected seq. send NAK (ack=34)
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=34). drop.
+  B_input: not the expected seq. send NAK (ack=34)
+  A_input: got NAK (ack=34). drop.
+  B_input: not the expected seq. send NAK (ack=34)
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=34)
+  A_input: got NAK (ack=34). drop.
+  B_input: not the expected seq. send NAK (ack=34)
+  A_input: got NAK (ack=34). drop.
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=34)
+  A_input: got NAK (ack=34). drop.
+  A_input: got NAK (ack=34). drop.
+  B_input: not the expected seq. send NAK (ack=34)
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=34)
+  A_input: got NAK (ack=34). drop.
+  B_input: not the expected seq. send NAK (ack=34)
+  B_input: not the expected seq. send NAK (ack=34)
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=34). drop.
+  A_input: got NAK (ack=34). drop.
+  B_input: not the expected seq. send NAK (ack=34)
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=34)
+  A_input: got NAK (ack=34). drop.
+  B_input: not the expected seq. send NAK (ack=34)
+  B_input: not the expected seq. send NAK (ack=34)
+  A_timerinterrupt: resend packet (seq=35): iiiiiiiiiiiiiiiiiii
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=34). drop.
+  B_input: recv packet (seq=35): iiiiiiiiiiiiiiiiiii
+  B_input: send ACK (ack=35)
+  A_input: got ACK (ack=35)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  B_input: recv packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  B_input: send ACK (ack=36)
+  B_input: recv packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  B_input: send ACK (ack=37)
+  A_timerinterrupt: resend packet (seq=36): jjjjjjjjjjjjjjjjjjj
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  A_input: got ACK (ack=36)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  B_input: recv packet (seq=38): lllllllllllllllllll
+  B_input: send ACK (ack=38)
+  B_input: recv packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  B_input: send ACK (ack=39)
+  A_timerinterrupt: resend packet (seq=37): kkkkkkkkkkkkkkkkkkk
+  A_timerinterrupt: resend packet (seq=38): lllllllllllllllllll
+  A_timerinterrupt: resend packet (seq=39): mmmmmmmmmmmmmmmmmmm
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  A_input: got ACK (ack=37)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  A_input: got ACK (ack=38)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  B_input: recv packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  B_input: send ACK (ack=40)
+  A_input: got ACK (ack=39)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=40)
+  A_timerinterrupt: resend packet (seq=40): nnnnnnnnnnnnnnnnnnn
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  A_input: got ACK (ack=40)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=40)
+  B_input: not the expected seq. send NAK (ack=40)
+  A_input: got NAK (ack=40). drop.
+  A_input: got NAK (ack=40). drop.
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=40)
+  A_input: got NAK (ack=40). drop.
+  B_input: not the expected seq. send NAK (ack=40)
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=40)
+  A_input: got NAK (ack=40). drop.
+  B_input: not the expected seq. send NAK (ack=40)
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=40). drop.
+  B_input: not the expected seq. send NAK (ack=40)
+  B_input: not the expected seq. send NAK (ack=40)
+  A_input: got NAK (ack=40). drop.
+  B_input: not the expected seq. send NAK (ack=40)
+  A_input: got NAK (ack=40). drop.
+  B_input: not the expected seq. send NAK (ack=40)
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=40)
+  B_input: not the expected seq. send NAK (ack=40)
+  A_input: got NAK (ack=40). drop.
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=40). drop.
+  B_input: not the expected seq. send NAK (ack=40)
+  A_input: got NAK (ack=40). drop.
+  B_input: not the expected seq. send NAK (ack=40)
+  A_input: got NAK (ack=40). drop.
+  B_input: not the expected seq. send NAK (ack=40)
+  A_input: got NAK (ack=40). drop.
+  B_input: recv packet (seq=41): ooooooooooooooooooo
+  B_input: send ACK (ack=41)
+  A_input: got NAK (ack=40). drop.
+  A_timerinterrupt: resend packet (seq=41): ooooooooooooooooooo
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got ACK (ack=41)
+  A_input: stop timer
+  send_window: send packet (seq=42): ppppppppppppppppppp
+  send_window: send packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  send_window: send packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  send_window: send packet (seq=45): sssssssssssssssssss
+  send_window: send packet (seq=46): ttttttttttttttttttt
+  send_window: send packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  send_window: send packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  send_window: send packet (seq=49): wwwwwwwwwwwwwwwwwww
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  A_input: got NAK (ack=41). drop.
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=41). drop.
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  A_input: got NAK (ack=41). drop.
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=41). drop.
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=41). drop.
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  A_input: got NAK (ack=41). drop.
+  B_input: not the expected seq. send NAK (ack=41)
+  B_input: not the expected seq. send NAK (ack=41)
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=41). drop.
+  B_input: recv packet (seq=42): ppppppppppppppppppp
+  B_input: send ACK (ack=42)
+  A_timerinterrupt: resend packet (seq=42): ppppppppppppppppppp
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=42)
+  A_input: got ACK (ack=42)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=42)
+  B_input: not the expected seq. send NAK (ack=42)
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=42)
+  A_input: got NAK (ack=42). drop.
+  A_input: got NAK (ack=42). drop.
+  B_input: recv packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  B_input: send ACK (ack=43)
+  B_input: recv packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  B_input: send ACK (ack=44)
+  A_timerinterrupt: resend packet (seq=43): qqqqqqqqqqqqqqqqqqq
+  A_timerinterrupt: resend packet (seq=44): rrrrrrrrrrrrrrrrrrr
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=44)
+  A_input: got ACK (ack=43)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  A_input: got ACK (ack=44)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=44)
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  B_input: not the expected seq. send NAK (ack=44)
+  A_input: got NAK (ack=44). drop.
+  B_input: not the expected seq. send NAK (ack=44)
+  B_input: not the expected seq. send NAK (ack=44)
+  A_timerinterrupt: resend packet (seq=45): sssssssssssssssssss
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  A_input: got NAK (ack=44). drop.
+  B_input: recv packet (seq=45): sssssssssssssssssss
+  B_input: send ACK (ack=45)
+  A_input: got NAK (ack=44). drop.
+  A_input: got ACK (ack=45)
+Warning: attempt to start a timer that is already started
+  A_input: timer + 15.000000
+  B_input: recv packet (seq=46): ttttttttttttttttttt
+  B_input: send ACK (ack=46)
+  B_input: recv packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  B_input: send ACK (ack=47)
+  A_timerinterrupt: resend packet (seq=46): ttttttttttttttttttt
+  A_timerinterrupt: resend packet (seq=47): uuuuuuuuuuuuuuuuuuu
+  A_timerinterrupt: resend packet (seq=48): vvvvvvvvvvvvvvvvvvv
+  A_timerinterrupt: resend packet (seq=49): wwwwwwwwwwwwwwwwwww
+  A_timerinterrupt: timer + 15.000000
+  B_input: recv packet (seq=48): vvvvvvvvvvvvvvvvvvv
